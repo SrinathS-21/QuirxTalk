@@ -75,8 +75,8 @@ export default function JoinMeeting() {
     getMeetingData();
   }, [params.id, user, userLoaded, navigate]);
 
-  const appId=1665108318;
-  const serverSecret= "ade3b9d9525f53c4d56b302747179e95";
+  const appId=;// zegocloud id
+  const serverSecret= ""; // zegocloud seversecret
 
   const myMeeting = async (element) => {
     // Ensure the user ID is available
