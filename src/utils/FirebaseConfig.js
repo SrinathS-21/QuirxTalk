@@ -5,7 +5,7 @@ import { getAuth } from "firebase/auth";
 import { collection, getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "",
+  apiKey: " ",
   authDomain: "",
   projectId: "",
   storageBucket: "",
