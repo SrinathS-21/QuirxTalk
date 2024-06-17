@@ -13,17 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v4  # Ensure this uses a version that supports Node.js 20
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
 
       - name: Set up JDK 11  # If using Java. Customize as needed for your project.
         uses: actions/setup-java@v3
         with:
           java-version: '11'
-          
-      - name: Set up Node.js 20
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
 
       - name: Build and Test
         run: ./gradlew build  # Adjust according to your build tool
